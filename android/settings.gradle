@@ -1,0 +1,34 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        flatDir {
+            dirs 'app/libs'
+        }
+        maven { url 'https://jitpack.io' }
+        maven { url "https://mirrors.tencent.com/repository/maven/thirdparty" }
+    }
+}
+
+rootProject.name = "application"
+include ':app'
+include ':video-chat'
+
+include ':tebeautykit'
+project(':tebeautykit').projectDir = file("./tuikit/tebeautykit")
+
+include ':timcommon'
+project(':timcommon').projectDir = file("./tuikit/timcommon")
+
+include ':tuiconversation'
+project(':tuiconversation').projectDir = file("./tuikit/tuiconversation")
+
+include ':tuichat'
+project(':tuichat').projectDir = file("./tuikit/tuichat")
+
+include ':tuicontact'
+project(':tuicontact').projectDir = file("./tuikit/tuicontact")
+
+include ':tuisearch'
+project(':tuisearch').projectDir = file("./tuikit/tuisearch")

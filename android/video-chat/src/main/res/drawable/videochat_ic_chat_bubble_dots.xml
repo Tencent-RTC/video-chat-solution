@@ -1,0 +1,27 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+
+    <!-- 气泡主体：圆角矩形 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M1.6,1.6 L18.4,1.6 Q20,1.6 20,3.6 L20,12.8 Q20,14.4 18.4,14.4 L7.6,14.4 L4,17.6 L4,14.4 L1.6,14.4 Q0,14.4 0,12.8 L0,3.6 Q0,1.6 1.6,1.6 Z" />
+
+    <!-- 左圆点 -->
+    <path
+        android:fillColor="#9B5DE5"
+        android:pathData="M6.3,8.2 m-1.1,0 a1.1,1.1 0 1,1 2.2,0 a1.1,1.1 0 1,1 -2.2,0" />
+
+    <!-- 中圆点 -->
+    <path
+        android:fillColor="#9B5DE5"
+        android:pathData="M10,8.2 m-1.1,0 a1.1,1.1 0 1,1 2.2,0 a1.1,1.1 0 1,1 -2.2,0" />
+
+    <!-- 右圆点 -->
+    <path
+        android:fillColor="#9B5DE5"
+        android:pathData="M13.7,8.2 m-1.1,0 a1.1,1.1 0 1,1 2.2,0 a1.1,1.1 0 1,1 -2.2,0" />
+
+</vector>

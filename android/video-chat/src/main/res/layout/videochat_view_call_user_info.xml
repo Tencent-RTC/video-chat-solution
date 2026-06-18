@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 通话页左上角用户信息 pill：头像 + 关注按钮 + 通话计时 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:background="@drawable/videochat_bg_call_user_info"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="4dp"
+    android:paddingTop="4dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="4dp">
+
+    <io.trtc.uikit.videochat.common.widget.avatar.AvatarView
+        android:id="@+id/iv_avatar"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        app:avatarCornerRadius="16dp" />
+
+    <TextView
+        android:id="@+id/btn_follow"
+        android:layout_width="46dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/videochat_bg_btn_follow"
+        android:gravity="center"
+        android:text="@string/videochat_follow"
+        android:textColor="@color/videochat_color_white"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <io.trtc.uikit.videochat.page.call.hint.TimerView
+        android:id="@+id/timer_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/videochat_color_white"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+</LinearLayout>

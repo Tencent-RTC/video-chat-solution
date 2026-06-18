@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ControlButton">
+        <attr name="cbIcon" format="reference" />
+        <attr name="cbText" format="string" />
+        <attr name="cbIconSize" format="dimension" />
+        <attr name="cbIconBackground" format="reference" />
+        <attr name="cbIconPadding" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="AvatarView">
+        <attr name="avatarCornerRadius" format="dimension" />
+        <attr name="avatarShowBorder" format="boolean" />
+        <attr name="avatarShowBadge" format="boolean" />
+        <attr name="avatarBorderWidth" format="dimension" />
+    </declare-styleable>
+</resources>

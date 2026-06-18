@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_bg_gradient">
+
+    <FrameLayout
+        android:id="@+id/container_page"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- 自定义底部导航栏 -->
+    <LinearLayout
+        android:id="@+id/bottom_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/app_bg_nav_gradient"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="4dp">
+
+        <!-- 交友 Tab -->
+        <LinearLayout
+            android:id="@+id/nav_tab_meet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="36dp"
+                android:layout_height="36dp">
+                <View
+                    android:id="@+id/nav_meet_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/app_bg_nav_selected" />
+                <ImageView
+                    android:id="@+id/nav_meet_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/app_btn_meet_selected" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/nav_meet_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_nav_meet"
+                android:textSize="10sp"
+                android:textColor="#FF2D78"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+        <!-- 消息 Tab -->
+        <LinearLayout
+            android:id="@+id/nav_tab_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="36dp"
+                android:layout_height="36dp">
+                <View
+                    android:id="@+id/nav_message_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/app_bg_nav_selected"
+                    android:visibility="gone" />
+                <ImageView
+                    android:id="@+id/nav_message_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/app_btn_message_unselected" />
+                <!-- 红色角标 -->
+                <TextView
+                    android:id="@+id/nav_message_badge"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/videochat_bg_badge"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/nav_message_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_nav_message"
+                android:textSize="10sp"
+                android:textColor="#9CA3AF"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+        <!-- 我的 Tab -->
+        <LinearLayout
+            android:id="@+id/nav_tab_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="36dp"
+                android:layout_height="36dp">
+                <View
+                    android:id="@+id/nav_mine_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/app_bg_nav_selected"
+                    android:visibility="gone" />
+                <ImageView
+                    android:id="@+id/nav_mine_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/app_ic_tab_mine" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/nav_mine_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_nav_mine"
+                android:textSize="10sp"
+                android:textColor="#9CA3AF"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

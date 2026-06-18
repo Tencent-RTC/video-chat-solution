@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="40dp"
+    android:adjustViewBounds="true"
+    android:maxWidth="480dp"
+    app:layout_constraintHorizontal_chainStyle="spread">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <io.trtc.uikit.videochat.common.widget.button.ControlButton
+        android:id="@+id/cb_hangup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:cbIcon="@drawable/videochat_bg_hangup"
+        app:cbText="@string/videochat_text_hangup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <io.trtc.uikit.videochat.common.widget.button.ControlButton
+        android:id="@+id/cb_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:cbIcon="@drawable/videochat_btn_gift"
+        app:cbIconBackground="@drawable/videochat_bg_gift_icon"
+        app:cbIconPadding="10dp"
+        app:cbIconSize="50dp"
+        app:cbText="@string/videochat_text_gift"
+        app:layout_constraintEnd_toEndOf="@+id/cb_audio_route"
+        app:layout_constraintStart_toStartOf="@+id/cb_audio_route"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <io.trtc.uikit.videochat.common.widget.button.ControlButton
+        android:id="@+id/cb_beauty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:cbIcon="@drawable/videochat_ic_beauty"
+        app:cbIconBackground="@drawable/videochat_bg_gift_icon"
+        app:cbIconPadding="10dp"
+        app:cbIconSize="50dp"
+        app:cbText="@string/videochat_text_beauty"
+        app:layout_constraintEnd_toEndOf="@+id/cb_camera"
+        app:layout_constraintStart_toStartOf="@+id/cb_camera"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <io.trtc.uikit.videochat.common.widget.button.ControlButton
+        android:id="@+id/cb_audio_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cbIcon="@drawable/videochat_bg_audio_device"
+        app:cbText="@string/videochat_text_earpiece"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/cb_microphone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <io.trtc.uikit.videochat.common.widget.button.ControlButton
+        android:id="@+id/cb_microphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cbIcon="@drawable/videochat_bg_mute_mic"
+        app:cbText="@string/videochat_text_disable_mute"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/cb_camera"
+        app:layout_constraintStart_toEndOf="@+id/cb_audio_route"
+        app:layout_constraintTop_toTopOf="@+id/cb_audio_route" />
+
+    <io.trtc.uikit.videochat.common.widget.button.ControlButton
+        android:id="@+id/cb_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cbIcon="@drawable/videochat_bg_camera"
+        app:cbText="@string/videochat_text_enable_camera"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cb_microphone"
+        app:layout_constraintTop_toTopOf="@+id/cb_audio_route" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

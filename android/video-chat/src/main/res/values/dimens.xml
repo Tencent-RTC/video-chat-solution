@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="video_call_small_view_width">120dp</dimen>
+    <dimen name="video_call_small_view_height">180dp</dimen>
+    <dimen name="videochat_call_controls_bottom_margin">16dp</dimen>
+</resources>

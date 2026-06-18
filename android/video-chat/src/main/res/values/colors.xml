@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 已有颜色（来自原 color.xml） -->
+    <color name="videochat_color_blur_mask">#8022262E</color>
+    <color name="videochat_color_white">#FFFFFFFF</color>
+    <color name="videochat_button_bg_red">#E6594C</color>
+    <color name="videochat_record_text_green">#12B969</color>
+    <color name="videochat_color_transparent">#00000000</color>
+
+    <!-- 下沉的硬编码颜色 -->
+    <color name="videochat_avatar_badge_green">#FF2ECC71</color>
+    <color name="videochat_divider_light">#15000000</color>
+    <color name="videochat_card_bg_white">#E6FFFFFF</color>
+    <color name="videochat_avatar_placeholder">#FFF3F4F6</color>
+    <color name="videochat_panel_bg_dark">#FF1A1A1A</color>
+    <color name="videochat_follow_btn_fill">#FFFF4081</color>
+    <color name="videochat_overlay_dark_bg">#55000000</color>
+    <color name="videochat_tag_overlay_bg">#66000000</color>
+    <color name="videochat_profile_gradient_top">#FFF0EEFF</color>
+    <color name="videochat_profile_gradient_mid">#FFF8F0FF</color>
+    <color name="videochat_profile_gradient_bottom">#FFFFF0F8</color>
+    <color name="videochat_tag_deep_purple_stroke">#0D7C3AED</color>
+    <color name="videochat_page_bg_light">#FFFCFCFD</color>
+    <color name="videochat_card_stroke_light">#08000000</color>
+    <color name="videochat_white_40">#66FFFFFF</color>
+    <color name="videochat_white_80">#CCFFFFFF</color>
+    <color name="videochat_text_primary">#FF1F2937</color>
+    <color name="videochat_text_secondary">#FF374151</color>
+</resources>

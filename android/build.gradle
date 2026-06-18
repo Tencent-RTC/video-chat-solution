@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        def gradleMajorVersion = gradle.gradleVersion.tokenize('.')[0].toInteger()
+        if (gradleMajorVersion >= 8) {
+            classpath 'com.android.tools.build:gradle:8.7.0'
+            classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.21"
+            classpath "org.jetbrains.kotlin:compose-compiler-gradle-plugin:2.0.21"
+        } else {
+            classpath 'com.android.tools.build:gradle:4.2.1'
+            classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    liteavSdk = "com.tencent.liteav:LiteAVSDK_Professional:13.2.0.20058"
+    roomEngineSdk = "io.trtc.uikit:rtc_room_engine:4.1.1.77"
+    atomicxCoreSdk = "io.trtc.uikit:atomicx-core:4.1.1.77"
+    imSdk = "com.tencent.imsdk:imsdk-plus:8.7.7201"
+}
