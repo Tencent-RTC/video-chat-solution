@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name=".page.beauty.BeautyActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".page.profile.UserProfilePage"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".page.call.VideoCallPage"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:launchMode="singleTask"
+            android:supportsPictureInPicture="true"
+            android:taskAffinity="${applicationId}.VideoCallPage"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <provider
+            android:name="io.trtc.uikit.videochat.manager.VideoCallService"
+            android:authorities="${applicationId}.VideoChatProvider"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

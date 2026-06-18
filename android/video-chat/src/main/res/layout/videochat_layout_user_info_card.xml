@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="36dp"
+    android:background="@drawable/videochat_bg_card_white"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingStart="14dp"
+    android:paddingTop="6dp"
+    android:paddingEnd="14dp"
+    android:paddingBottom="14dp">
+
+    <io.trtc.uikit.videochat.common.widget.avatar.AvatarView
+        android:id="@+id/avatar_view"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="-36dp"
+        app:avatarCornerRadius="36dp"
+        app:avatarShowBorder="true"
+        app:avatarBorderWidth="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@android:color/holo_purple" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#1A1A1A"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@id/tv_stats"
+        app:layout_constraintEnd_toStartOf="@id/tv_user_id"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/avatar_view"
+        app:layout_constraintTop_toTopOf="@id/avatar_view"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tv_user_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_stats"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/avatar_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/avatar_view"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <io.trtc.uikit.videochat.common.widget.FlowLayout
+        android:id="@+id/layout_tags"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avatar_view" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/videochat_divider_light"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_tags"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_signature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="2dp"
+        android:maxLines="2"
+        android:textColor="#666666"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        tools:text="@string/videochat_default_signature"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/videochat_expand"
+        android:textColor="#B44FFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_signature"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

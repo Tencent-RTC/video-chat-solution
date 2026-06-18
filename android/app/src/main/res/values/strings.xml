@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">videochat</string>
+    <string name="app_main_title">Video Chat</string>
+    <string name="app_user_id">UserId</string>
+    <string name="app_hint_user_id">输入 UserId</string>
+    <string name="app_btn_login">登录</string>
+
+    <!-- Pages -->
+    <string name="app_page_nearby">附近</string>
+    <string name="app_page_follow">我的关注</string>
+
+    <!-- Bottom nav -->
+    <string name="app_nav_meet">交友</string>
+    <string name="app_nav_message">消息</string>
+    <string name="app_nav_mine">我的</string>
+
+    <!-- Login -->
+    <string name="app_userid_empty">UserId 不能为空</string>
+    <string name="app_login_failed">登录失败</string>
+
+    <!-- Data import -->
+    <string name="app_data_not_imported">用户数据未导入</string>
+    <string name="app_data_not_imported_desc">运行 android/create_robot.py 脚本生成用户信息，获得更好的体验</string>
+
+    <!-- Common -->
+    <string name="app_confirm">确定</string>
+    <string name="app_bio_fallback">这个人很懒，什么都没写</string>
+</resources>

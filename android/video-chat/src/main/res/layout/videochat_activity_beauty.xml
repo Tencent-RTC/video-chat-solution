@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".page.beauty.BeautyActivity">
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/btn_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/videochat_bg_beauty_back">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/videochat_ic_return_arrow" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fab_beauty"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/videochat_bg_beauty_ring">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/videochat_ic_beauty"
+            android:tint="#FFFF2D78" />
+
+    </FrameLayout>
+
+</FrameLayout>

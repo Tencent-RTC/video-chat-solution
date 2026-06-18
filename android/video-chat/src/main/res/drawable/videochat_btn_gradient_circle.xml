@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ins 风格粉紫渐变圆形按钮背景 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <gradient
+        android:startColor="#FF2D78"
+        android:endColor="#B44FFF"
+        android:angle="0" />
+</shape>

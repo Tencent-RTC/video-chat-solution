@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:background="@drawable/videochat_bg_conversation_item"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <CheckBox
+        android:id="@+id/select_checkbox"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="8dp"
+        android:button="@null"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <com.tencent.qcloud.tuikit.tuiconversation.classicui.widget.ConversationIconView
+            android:id="@+id/conversation_icon"
+            android:layout_width="44dp"
+            android:layout_height="44dp" />
+
+        <View
+            android:id="@+id/user_status"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/videochat_ic_online_dot"
+            android:elevation="4dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/conversation_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/conversation_time"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#1F2937"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/conversation_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="#9CA3AF"
+                android:textSize="10sp"
+                tools:text="12:30" />
+
+            <ImageView
+                android:id="@+id/mark_banner"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/conversation_mark_banner"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/message_status_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/message_status_sending"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/message_status_failed"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/fold_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#9CA3AF"
+                android:textSize="11sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/fold_group_name_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="#9CA3AF"
+                android:textSize="11sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/conversation_risk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#FF2D78"
+                android:textSize="11sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/conversation_at_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF2D78"
+                android:textSize="11sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/conversation_at_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF2D78"
+                android:textSize="11sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/conversation_draft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF2D78"
+                android:textSize="11sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/conversation_last_msg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#6B7280"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/not_disturb"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/conversation_ic_disturb"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.tencent.qcloud.tuikit.timcommon.component.UnreadCountTextView
+        android:id="@+id/conversation_unread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="6dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:minWidth="16dp"
+        android:minHeight="16dp"
+        android:textColor="#FFFFFF"
+        android:textSize="8sp" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+</LinearLayout>
